@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_71e0b8d688bd969e773dfa5296a19d52 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; 
+                    bottom: 50px; left: 50px; width: 200px; height: 60px; 
+                    background-color: white; border:2px solid grey; z-index:9999; 
+                    font-size:14px; padding: 10px">
+        <p><b>JBW Viewer</b></p>
+        <p>Cliquez sur un marqueur pour plus d'informations</p>
+        </div>
+        
+    
+            <div class="folium-map" id="map_71e0b8d688bd969e773dfa5296a19d52" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_71e0b8d688bd969e773dfa5296a19d52 = L.map(
+                "map_71e0b8d688bd969e773dfa5296a19d52",
+                {
+                    center: [46.0, 2.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+
+            
+
+        
+    
+            var tile_layer_c5c0fef9e5843740a9d662676edb508f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c5c0fef9e5843740a9d662676edb508f.addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var marker_e6fccd50e719831329f6b3f61feb8b23 = L.marker(
+                [46.61031019729367, 1.496916302149087],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_7fed17e3edec560dc4eb3ce88146640d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e335daad859c8bb9e7e5f51e9c7e6b33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab2a494de9603a97750b3e503c2474e9 = $(`<div id="html_ab2a494de9603a97750b3e503c2474e9" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> Argenton-sur-Creuse</p>                 <p><strong>PR:</strong> 597120.BA</p>             </div>             </div>`)[0];
+                popup_e335daad859c8bb9e7e5f51e9c7e6b33.setContent(html_ab2a494de9603a97750b3e503c2474e9);
+            
+        
+
+        marker_e6fccd50e719831329f6b3f61feb8b23.bindPopup(popup_e335daad859c8bb9e7e5f51e9c7e6b33)
+        ;
+
+        
+    
+    
+            marker_e6fccd50e719831329f6b3f61feb8b23.bindTooltip(
+                `<div>
+                     597120-BA: Argenton-sur-Creuse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6fccd50e719831329f6b3f61feb8b23.setIcon(icon_7fed17e3edec560dc4eb3ce88146640d);
+            
+    
+            var marker_b5b726c60aa42e220f271435348987b5 = L.marker(
+                [47.88228128067197, 5.335482971633482],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_f71ce4a75fb317c4d091f7dcafdd7087 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac9bd6c35bdd2f072af9b7ced5ca0048 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_400e6e84d1e51d0b9562deb2a8301c5a = $(`<div id="html_400e6e84d1e51d0b9562deb2a8301c5a" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> Langres</p>                 <p><strong>PR:</strong> 142091.AO</p>             </div>             </div>`)[0];
+                popup_ac9bd6c35bdd2f072af9b7ced5ca0048.setContent(html_400e6e84d1e51d0b9562deb2a8301c5a);
+            
+        
+
+        marker_b5b726c60aa42e220f271435348987b5.bindPopup(popup_ac9bd6c35bdd2f072af9b7ced5ca0048)
+        ;
+
+        
+    
+    
+            marker_b5b726c60aa42e220f271435348987b5.bindTooltip(
+                `<div>
+                     142091-AO: Langres
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b5b726c60aa42e220f271435348987b5.setIcon(icon_f71ce4a75fb317c4d091f7dcafdd7087);
+            
+    
+            var marker_bd311f62d9e2c0c1d8b7e759e4174593 = L.marker(
+                [48.643340545289334, 1.83143329559238],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_6a8eb506d301be5183a2b5a4cf6ad195 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ef18ac5bffab684a3eade510cc7ca90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da69f540ae91994773721167a90f423d = $(`<div id="html_da69f540ae91994773721167a90f423d" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> Rambouillet</p>                 <p><strong>PR:</strong> 393314.BV</p>             </div>             </div>`)[0];
+                popup_9ef18ac5bffab684a3eade510cc7ca90.setContent(html_da69f540ae91994773721167a90f423d);
+            
+        
+
+        marker_bd311f62d9e2c0c1d8b7e759e4174593.bindPopup(popup_9ef18ac5bffab684a3eade510cc7ca90)
+        ;
+
+        
+    
+    
+            marker_bd311f62d9e2c0c1d8b7e759e4174593.bindTooltip(
+                `<div>
+                     393314-BV: Rambouillet
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd311f62d9e2c0c1d8b7e759e4174593.setIcon(icon_6a8eb506d301be5183a2b5a4cf6ad195);
+            
+    
+            var marker_02036de7531daf1d90f7485c919f7a53 = L.marker(
+                [45.65465728401408, 0.16542102740988515],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_2cb73b7c870ccbc85f3980ee8ec9cf26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_652b4c7e0985c39d63d4b69d4583cf55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7889289347e3023057dabb4d7ed05b01 = $(`<div id="html_7889289347e3023057dabb4d7ed05b01" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> Angoulême</p>                 <p><strong>PR:</strong> 583005.FP</p>             </div>             </div>`)[0];
+                popup_652b4c7e0985c39d63d4b69d4583cf55.setContent(html_7889289347e3023057dabb4d7ed05b01);
+            
+        
+
+        marker_02036de7531daf1d90f7485c919f7a53.bindPopup(popup_652b4c7e0985c39d63d4b69d4583cf55)
+        ;
+
+        
+    
+    
+            marker_02036de7531daf1d90f7485c919f7a53.bindTooltip(
+                `<div>
+                     583005-FP: Angoulême
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02036de7531daf1d90f7485c919f7a53.setIcon(icon_2cb73b7c870ccbc85f3980ee8ec9cf26);
+            
+    
+            var marker_e103ef31bec90990c87c2b27a27ad13d = L.marker(
+                [45.4591451541048, 4.3854258486787945],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_afef8532254101db9374dbd536ee8122 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb6bd9de4be346cb8aecc89698ecaf87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4403942a27b966263b235f9513ea6a47 = $(`<div id="html_4403942a27b966263b235f9513ea6a47" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> St-Étienne-La Terrasse</p>                 <p><strong>PR:</strong> 726158.ST</p>             </div>             </div>`)[0];
+                popup_eb6bd9de4be346cb8aecc89698ecaf87.setContent(html_4403942a27b966263b235f9513ea6a47);
+            
+        
+
+        marker_e103ef31bec90990c87c2b27a27ad13d.bindPopup(popup_eb6bd9de4be346cb8aecc89698ecaf87)
+        ;
+
+        
+    
+    
+            marker_e103ef31bec90990c87c2b27a27ad13d.bindTooltip(
+                `<div>
+                     726158-ST: St-Étienne-La Terrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e103ef31bec90990c87c2b27a27ad13d.setIcon(icon_afef8532254101db9374dbd536ee8122);
+            
+    
+            var marker_1fbb69ddde8ee49aa86479d80ea976a7 = L.marker(
+                [49.877555934199286, 2.3556351960962143],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_894f7d1e3395459b50ccc748279e8def = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64f9585bdf2cc818735d95b300705620 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1e678bfdcd89957dfc40fcdb6b24619 = $(`<div id="html_d1e678bfdcd89957dfc40fcdb6b24619" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> Longueau</p>                 <p><strong>PR:</strong> 313049.RP</p>             </div>             </div>`)[0];
+                popup_64f9585bdf2cc818735d95b300705620.setContent(html_d1e678bfdcd89957dfc40fcdb6b24619);
+            
+        
+
+        marker_1fbb69ddde8ee49aa86479d80ea976a7.bindPopup(popup_64f9585bdf2cc818735d95b300705620)
+        ;
+
+        
+    
+    
+            marker_1fbb69ddde8ee49aa86479d80ea976a7.bindTooltip(
+                `<div>
+                     313049-RP: Longueau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fbb69ddde8ee49aa86479d80ea976a7.setIcon(icon_894f7d1e3395459b50ccc748279e8def);
+            
+    
+            var marker_9c0898e69f7180a4659ba51eda45f83c = L.marker(
+                [49.87384174961333, 2.3425497048080213],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_4862075a5ef9ab2e33cff07116c2276f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78cfcb3548182f5f841a0a58929bea2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5aaac0973295f43ef6f5f9546fcad71c = $(`<div id="html_5aaac0973295f43ef6f5f9546fcad71c" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> Longueau</p>                 <p><strong>PR:</strong> 313049.MA</p>             </div>             </div>`)[0];
+                popup_78cfcb3548182f5f841a0a58929bea2d.setContent(html_5aaac0973295f43ef6f5f9546fcad71c);
+            
+        
+
+        marker_9c0898e69f7180a4659ba51eda45f83c.bindPopup(popup_78cfcb3548182f5f841a0a58929bea2d)
+        ;
+
+        
+    
+    
+            marker_9c0898e69f7180a4659ba51eda45f83c.bindTooltip(
+                `<div>
+                     313049-MA: Longueau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9c0898e69f7180a4659ba51eda45f83c.setIcon(icon_4862075a5ef9ab2e33cff07116c2276f);
+            
+    
+            var marker_39ea6fabc72fc2f48407f4a644ea5ff8 = L.marker(
+                [43.58476864711205, 6.968797754446164],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_340c76694c81920a1e3cee90106a6d6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d8f9c34c399b7b197196dc4dc4f6dc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0037d5ffdb6966fdc213757b5587d962 = $(`<div id="html_0037d5ffdb6966fdc213757b5587d962" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> ITE CAAT</p>                 <p><strong>PR:</strong> 401968.AS</p>             </div>             </div>`)[0];
+                popup_6d8f9c34c399b7b197196dc4dc4f6dc3.setContent(html_0037d5ffdb6966fdc213757b5587d962);
+            
+        
+
+        marker_39ea6fabc72fc2f48407f4a644ea5ff8.bindPopup(popup_6d8f9c34c399b7b197196dc4dc4f6dc3)
+        ;
+
+        
+    
+    
+            marker_39ea6fabc72fc2f48407f4a644ea5ff8.bindTooltip(
+                `<div>
+                     401968-AS: ITE CAAT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39ea6fabc72fc2f48407f4a644ea5ff8.setIcon(icon_340c76694c81920a1e3cee90106a6d6b);
+            
+    
+            var marker_bc5c05cfdcdc90acca33502ef83a7f56 = L.marker(
+                [49.29843274617338, 6.158104988379197],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_a6a54e2c7d4b7a7e69e9fce9263f195b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1a63e3b738bcc7c42ceb7a7ac930eb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c86cb1c1aa8dda553cd83d2f20326aab = $(`<div id="html_c86cb1c1aa8dda553cd83d2f20326aab" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> Bettembourg</p>                 <p><strong>PR:</strong> 191999.W5</p>             </div>             </div>`)[0];
+                popup_b1a63e3b738bcc7c42ceb7a7ac930eb1.setContent(html_c86cb1c1aa8dda553cd83d2f20326aab);
+            
+        
+
+        marker_bc5c05cfdcdc90acca33502ef83a7f56.bindPopup(popup_b1a63e3b738bcc7c42ceb7a7ac930eb1)
+        ;
+
+        
+    
+    
+            marker_bc5c05cfdcdc90acca33502ef83a7f56.bindTooltip(
+                `<div>
+                     191999-W5: Bettembourg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc5c05cfdcdc90acca33502ef83a7f56.setIcon(icon_a6a54e2c7d4b7a7e69e9fce9263f195b);
+            
+    
+            var marker_df2d54cdbeea24a59bd3138e84e47e3b = L.marker(
+                [49.38515782648747, 6.1330300475975745],
+                {
+}
+            ).addTo(map_71e0b8d688bd969e773dfa5296a19d52);
+        
+    
+            var icon_87fe6d724d7bd99e0c77fadbe0a55547 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecc6fdd213b0c235e1d5709984d78389 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33f2ef75a9aa580922bb4f47bba07262 = $(`<div id="html_33f2ef75a9aa580922bb4f47bba07262" style="width: 100.0%; height: 100.0%;">             <div style='font-family: Arial, sans-serif;'>                 <h4>Point Remarquable</h4>                 <p><strong>Libellé:</strong> Bettembourg</p>                 <p><strong>PR:</strong> 191999.W4</p>             </div>             </div>`)[0];
+                popup_ecc6fdd213b0c235e1d5709984d78389.setContent(html_33f2ef75a9aa580922bb4f47bba07262);
+            
+        
+
+        marker_df2d54cdbeea24a59bd3138e84e47e3b.bindPopup(popup_ecc6fdd213b0c235e1d5709984d78389)
+        ;
+
+        
+    
+    
+            marker_df2d54cdbeea24a59bd3138e84e47e3b.bindTooltip(
+                `<div>
+                     191999-W4: Bettembourg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df2d54cdbeea24a59bd3138e84e47e3b.setIcon(icon_87fe6d724d7bd99e0c77fadbe0a55547);
+            
+</script>
+</html>

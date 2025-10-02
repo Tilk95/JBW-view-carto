@@ -1,0 +1,24 @@
+# JBW Viewer - Dépendances
+# ========================
+# 
+# Ce fichier contient toutes les dépendances nécessaires pour faire fonctionner
+# l'application JBW Viewer.
+#
+# Installation :
+# pip install -r requirements.txt
+#
+# Ou installation manuelle :
+# pip install folium
+
+# Cartographie interactive
+folium>=0.14.0
+
+# Conversion de coordonnées
+pyproj>=3.0.0
+
+# Note : Les autres dépendances sont des modules Python standard :
+# - csv (lecture des fichiers CSV)
+# - tkinter (interface graphique)
+# - json (gestion des données JSON)
+# - os (gestion des fichiers et dossiers)
+# - webbrowser (ouverture des cartes dans le navigateur)

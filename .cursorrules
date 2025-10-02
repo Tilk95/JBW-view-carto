@@ -1,0 +1,47 @@
+Règle d’or : Ne fais AUCUNE modification de fichier sans mon autorisation. 
+
+
+# Règles de développement universelles
+
+## 📚 Documentation obligatoire
+- **Documentation complète** : chaque fonction, classe et module doit être documenté
+- **Commentaires explicatifs** : logique métier documentée (pas de code implicite)
+- **Exemples si nécessaire** : paramètres, retours, cas d'usage
+- **Pas de code sans explication** : tout doit être compréhensible
+
+## 🏗️ Architecture et organisation
+- **Séparation des responsabilités** : découpage clair entre logique métier, affichage, et gestion des données
+- **Code modulaire** : éviter les fichiers monolithiques
+- **Nommage explicite** : variables, fonctions, et structures de données claires
+- **Lisibilité prioritaire** : code compréhensible avant optimisation
+
+## 🧪 Tests et qualité
+- **Tests pour chaque fonctionnalité** : procédures de test documentées
+- **Validation avant commit** : vérifier que tout fonctionne
+- **Pas de "quick fix"** : chaque modification doit être documentée
+- **Gestion des erreurs** : messages clairs pour l'utilisateur
+
+## 📝 Gestion de projet
+- **README à jour** : structure des données, évolutions, fonctionnalités
+- **Changelog** : tracer toutes les modifications
+- **Documentation des limitations** : points d'attention techniques
+- **Instructions d'utilisation** : comment utiliser l'application
+
+## 🚫 Anti-patterns à éviter
+- Code non documenté
+- Fonctions trop longues (>50 lignes)
+- Variables avec des noms non explicites
+- Logique métier mélangée avec l'interface
+- Modifications sans tests
+- eviter les modules de plus de 300-500 lignes
+- privilégier le découpage par responsabilité afin de facilité la maintenance et le déboggage
+
+
+## ✅ Bonnes pratiques
+- **Documentation vivante** : mise à jour avec le code
+- **Tests manuels** : validation de chaque fonctionnalité
+- **Code maintenable** : penser à la maintenance future
+- **Standards du langage** : respecter les conventions du langage utilisé
+- traiter les demandes d'évolution en évitant les solutions complexes. Il faut - éviter au maximum de casser des fonctions existantes et privlégier la solution la plus simple avant d'éviter les régressions.
+
+- avant toute modification du code il faudra absolument demander l'autorisation
