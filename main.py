@@ -10,10 +10,6 @@ Fonctionnalités :
 - Génération de cartes interactives
 - Recherche de PR par codes
 - Interface utilisateur simple et intuitive
-
-Auteur: Assistant IA
-Date: 2025
-Version: 1.0
 """
 
 import sys
